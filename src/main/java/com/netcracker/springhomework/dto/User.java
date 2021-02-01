@@ -9,6 +9,16 @@ public class User {
     String mail;
     String workplace;
 
+    public User(String lastName, String firstName, String patronymic, String age, String salary, String mail, String workplace) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.patronymic = patronymic;
+        this.age = Integer.parseInt(age);
+        this.salary = Double.parseDouble(salary);
+        this.mail = mail;
+        this.workplace = workplace;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
